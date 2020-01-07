@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #5555ff;
+  min-height: 2em;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  color: #ffffff;
+  font-size: 1.2em;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+header a {
+  color: #ffffff;
+}
+
+main {
+  margin: 1em 0;
+  flex: 1 0 100%;
+}
+
+.container {
+  max-width: 960px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0.5em;
+}
+
+nav a {
+  line-height: 1.2em;
+  color: #5555ff;
+  transition: all 0.3 ease;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.list {
+  height: 100%;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.content {
+  margin: 1em 0;
+  padding: 0.5em;
+  background-color: #f0f0f0;
+}
+
+th {
+  text-align: left;
+}
+
+.button {
+  background-color: #5555ff;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  font-size: 0.9em
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0.5em;
+}
+
+th:nth-child(odd),
+tr:nth-child(even) > td:nth-child(odd),
+tr:nth-child(odd) > td:nth-child(even) {
+  background-color: #e7e7e7;
+}
+
+.icon-button {
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #5555ff;
+  margin: 0 0.5em;
+  width: 2em;
+  height: 2em;
+  border: none;
+  color: #ffffff
+}
+
+.icon-button:hover {
+  opacity: 0.8;
+}
+
+input[type="text"], input[type="number"], input[type="date"], select {
+  display: block;
+  line-height: 2em;
+  height: 2em;
+  padding: 0 0.5em;
+  font-size: 1em;
+  border-radius: 0.5em;
+  border: 1px solid #5555ff;
+  margin: 1em 0;
+  outline: none;
+  width: 50%;
+  min-width: 10em;
+  background-color: #ffffff;
+}
+
+select {
+  width: calc(50% + 1em);
+}
