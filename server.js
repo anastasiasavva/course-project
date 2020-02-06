@@ -165,7 +165,9 @@ con.connect(err => {
   con.query("DROP VIEW IF EXISTS сотрудники;");
   con.query("DROP VIEW IF EXISTS поставки;");
 
-  /* VIEW */ con.query(
+  /* VIEW */
+
+  con.query(
     "CREATE VIEW группы_товаров " +
       "AS SELECT " +
       "название " +
